@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\..csproj": {}
+    "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\AuctionForgeBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\..csproj": {
+    "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\AuctionForgeBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\..csproj",
-        "projectName": ".",
-        "projectPath": "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\..csproj",
+        "projectUniqueName": "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\AuctionForgeBackend.csproj",
+        "projectName": "AuctionForgeBackend",
+        "projectPath": "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\AuctionForgeBackend.csproj",
         "packagesPath": "C:\\Users\\Isuususu\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Isuususu\\Desktop\\AuctionForgeBackend\\obj\\",
         "projectStyle": "PackageReference",
