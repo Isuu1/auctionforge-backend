@@ -29,13 +29,13 @@ namespace SanityBackend.Controllers
         }
 
         // Example for getting a single template by ID
-        [HttpGet("{id}")] // This means the endpoint will be /api/templates/{id}
-        public async Task<ActionResult<JsonDocument>> GetTemplateById(string id)
+        [HttpGet("{slug}")] // This means the endpoint will be /api/templates/{slug}
+        public async Task<ActionResult<JsonDocument>> GetTemplateBySlug(string slug)
         {
-            var template = await _sanityService.GetTemplateById(id);
+            var template = await _sanityService.GetTemplateBySlug(slug);
             if (template == null)
             {
-                return NotFound($"Template with ID '{id}' not found or an error occurred.");
+                return NotFound($"Template with ID '{slug}' not found or an error occurred.");
             }
             return Ok(template);
         }

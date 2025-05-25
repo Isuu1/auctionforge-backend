@@ -53,9 +53,9 @@ namespace SanityBackend.Services
 
         // You can add more methods here for other queries (e.g., get a specific template by ID, create a listing, etc.)
         // Example for fetching a single template by ID:
-        public async Task<JsonDocument> GetTemplateById(string id)
+        public async Task<JsonDocument> GetTemplateBySlug(string slug)
         {
-            var query = $"*[_id == '{id}']";
+            var query = $"*[slug.current == '{slug}']";
             var encodedQuery = System.Web.HttpUtility.UrlEncode(query);
             var requestUri = $"?query={encodedQuery}";
 
@@ -68,7 +68,7 @@ namespace SanityBackend.Services
             }
             else
             {
-                Console.WriteLine($"Error fetching template by ID '{id}': {response.StatusCode} - {await response.Content.ReadAsStringAsync()}");
+                Console.WriteLine($"Error fetching template by ID '{slug}': {response.StatusCode} - {await response.Content.ReadAsStringAsync()}");
                 return null;
             }
         }
