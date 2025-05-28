@@ -51,6 +51,26 @@ namespace SanityBackend.Services
             }
         }
 
+        public async Task<JsonDocument> GetColorPalette()
+        {
+            var query = "*[_type == 'colorPalette']";
+            var encodedQuery = System.Web.HttpUtility.UrlEncode(query);
+            var requestUri = $"?query={encodedQuery}";
+
+            var response = await _httpClient.GetAsync(requestUri);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonDocument.Parse(content);
+            }
+            else
+            {
+                Console.WriteLine($"Error fetching color palette from Sanity: {response.StatusCode} - {await response.Content.ReadAsStringAsync()}");
+                return null;
+            }
+        }
+
         // You can add more methods here for other queries (e.g., get a specific template by ID, create a listing, etc.)
         // Example for fetching a single template by ID:
         public async Task<JsonDocument> GetTemplateBySlug(string slug)
