@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Threading.Tasks;
-using SanityBackend.Services; // Make sure this namespace matches your SanityService location
+using SanityBackend.Services; 
 
 namespace SanityBackend.Controllers
 {
 
     [ApiController]
-    [Route("api/[controller]")] // This means the endpoint will be /api/templates
+    [Route("api/[controller]")] //Endpoint: /api/templates
     public class TemplatesController : ControllerBase
     {
         private readonly SanityService _sanityService;
@@ -28,8 +28,7 @@ namespace SanityBackend.Controllers
             return Ok(templates);
         }
 
-        // Example for getting a single template by ID
-        [HttpGet("{slug}")] // This means the endpoint will be /api/templates/{slug}
+        [HttpGet("{slug}")] //Endpoint /api/templates/{slug}
         public async Task<ActionResult<JsonDocument>> GetTemplateBySlug(string slug)
         {
             var template = await _sanityService.GetTemplateBySlug(slug);

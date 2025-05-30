@@ -6,7 +6,7 @@ using SanityBackend.Services;
 namespace SanityBackend.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")] // This means the endpoint will be /api/colorpalette
+    [Route("api/[controller]")] //Endpoint /api/colorpalette
     public class ColorPaletteController : ControllerBase
     {
         private readonly SanityService _sanityService;
