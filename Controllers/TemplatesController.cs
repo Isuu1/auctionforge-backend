@@ -5,7 +5,6 @@ using SanityBackend.Services;
 
 namespace SanityBackend.Controllers
 {
-
     [ApiController]
     [Route("api/[controller]")] //Endpoint: /api/templates
     public class TemplatesController : ControllerBase

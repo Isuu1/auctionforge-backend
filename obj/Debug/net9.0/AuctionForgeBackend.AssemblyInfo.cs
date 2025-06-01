@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuctionForgeBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce20c048a79cafa05e05e53f07cdc67ccdc90fba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b0add2ee01801cab039919688d440d28a8c8f95")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuctionForgeBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuctionForgeBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
